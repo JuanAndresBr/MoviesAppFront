@@ -1,0 +1,20 @@
+<div class="register-container">
+  <h2>Registro de Usuario</h2>
+  <form [formGroup]="formularioRegistro" (ngSubmit)="registrarUsuario()">
+    <div class="form-group">
+      <label for="nam">Nombre:</label>
+      <input type="text" id="nam" formControlName="nam" required>
+    </div>
+    <div class="form-group">
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" formControlName="username" required>
+    </div>
+    <div class="form-group">
+      <label for="pass">Contraseña:</label>
+      <input type="password" id="pass" formControlName="pass" required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Registrar</button>
+    </div>
+  </form>
+</div>

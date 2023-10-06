@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="text">
+    <h2>{{ data.title }}</h2>
+    <p>{{ data.overview }}</p>
+  </div>
+  <img
+    [src]="'https://image.tmdb.org/t/p/original' + data.poster_path"
+    alt="{{ data.title }}"
+    height="300px"
+    width="200px"
+  />
+</div>
+
+<!-- Otros detalles de la película aquí -->

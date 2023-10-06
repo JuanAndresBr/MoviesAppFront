@@ -1,0 +1,17 @@
+<div *ngIf="!shareService.mostrarFavoritas" class="search-container">
+  <input
+    type="text"
+    placeholder="Buscar películas..."
+    [(ngModel)]="searchTerm"
+    (input)="onSearch()"
+  />
+  <button (click)="onSearch()">Buscar</button>
+</div>
+
+<div
+  class="search-results"
+  *ngIf="searchResults.length > 0 && shareService.mostrarResultado"
+>
+  <h2>Resultados de la búsqueda</h2>
+  <app-cards [listaMovies]="searchResults"></app-cards>
+</div>

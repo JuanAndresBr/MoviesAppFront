@@ -1,0 +1,31 @@
+<div class="cards-container">
+  <div class="card-container" *ngFor="let pelicula of listaMovies">
+    <div>
+      <button
+        class="like"
+        *ngIf="pelicula.favorite"
+        (click)="eliminarFavorito(pelicula.id)"
+      >
+        ❤️
+      </button>
+      <button
+        class="like"
+        *ngIf="!pelicula.favorite"
+        (click)="agregarFavorito(pelicula.id)"
+      >
+        🤍
+      </button>
+    </div>
+    <div (click)="mostrarDetallePeliculaModal(pelicula)" class="card">
+      <h2>{{ pelicula.title }}</h2>
+      <img
+        *ngIf="pelicula.poster_path"
+        [src]="'https://image.tmdb.org/t/p/original' + pelicula.poster_path"
+        alt="{{ pelicula.title }} Poster"
+        height="300px"
+        width="200px"
+      />
+      <div *ngIf="!pelicula.poster_path">Imagen no disponible</div>
+    </div>
+  </div>
+</div>

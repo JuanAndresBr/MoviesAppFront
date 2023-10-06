@@ -1,0 +1,95 @@
+.body{
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  
+}
+.Navbar{
+  display: flex;
+  border: 2px solid white;
+  padding: 20px;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+
+.body a{
+  text-decoration: none;
+  color: rgb(255, 89, 0);
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.Navbar a:hover{
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.login-container {
+  background-color: #940000;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-group button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+
+.botonRegister a{
+  color: #ccc;
+
+}
+.botonRegister a:hover{
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.boton{
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 89, 0);
+}
+.boton:hover{
+  cursor: pointer;
+  font-weight: bolder;
+}
