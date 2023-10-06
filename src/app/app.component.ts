@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from './auth.service';
-import { Router } from '@angular/router'; // Importa el servicio de enrutamiento
+import { Router } from '@angular/router'; 
 import { MoviesService } from './Services/movies.service';
 import { Movie } from './Interfaces/movie';
 import { SharedService } from './shared.service';
@@ -30,7 +30,6 @@ export class AppComponent {
   }
 
   async login(): Promise<void> {
-    // Llama al método de autenticación, por ejemplo, AuthService.login()
     try {
       await this.authService.login(
         this.formularioIngreso.value.username,
@@ -52,6 +51,7 @@ export class AppComponent {
     }
   }
 
+  //manejo entre componentes
   mostrarComponenteFavoritas() {
 
     this.sharedService.mostrarResultado=false;
@@ -86,7 +86,7 @@ export class AppComponent {
       error: (e) => {},
     });
   }
-
+  //Cerrar sesión
   logOut() {
     this.authService.logout();
     this.listaMovies = [];

@@ -5,14 +5,10 @@ import { FavoritasComponent } from './favoritas/favoritas.component';
 import { DetallesMovieComponent } from './detalles-movie/detalles-movie.component';
 
 const routes: Routes = [
-  {path:"details/:id_movie",component: DetallesMovieComponent},
-
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-
-
-export class AppRoutingModule { }
+export class AppRoutingModule {}
